@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "e5dc6c4a-b5e4-4b80-80d7-dcd954aefaad",
+		"name": "Flask - CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25414173"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shivamkap\",\r\n    \"email\":\"kapoorshivam77@gmail.com\",\r\n    \"password\":\"dhisfaihd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/manipulate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"manipulate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/manipulate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"manipulate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/getOne/64aa0eb9d5fcf71675106953",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/crud/64be3a42b98ed731c6528ef3",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"crud",
+						"64be3a42b98ed731c6528ef3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/deleteData/64aa0eb9d5fcf71675106953",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/crud/64be1bc4599d02d347883613",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"crud",
+						"64be1bc4599d02d347883613"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/updateData/64a9af2e695a241701b16b28",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"iak\",\r\n    \"email\":\"Heck@gmail.com\",\r\n    \"password\":\"dhdihd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/crud/64be1bc4599d02d347883613",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"crud",
+						"64be1bc4599d02d347883613"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
